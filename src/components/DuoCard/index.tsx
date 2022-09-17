@@ -9,7 +9,7 @@ import { THEME } from '../../theme';
 
 export interface DuoCardProps {
   id: string;
-  hoursEnd: string;
+  hourEnd: string;
   hourStart: string;
   name: string;
   useVoiceChannel: boolean;
@@ -35,7 +35,7 @@ export function DuoCard({ data, onConnect }: Props) {
         />
         <DuoInfo
           label="Disponibilidade"
-          value={`${data.weekDays.length} dias \u2022 ${data.hourStart} - ${data.hoursEnd}`}
+          value={`${data.weekDays.length} dias \u2022 ${data.hourStart} - ${data.hourEnd}`}
         />
         <DuoInfo
           label="Chamada de áudio"
